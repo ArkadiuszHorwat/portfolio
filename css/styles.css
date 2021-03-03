@@ -89,15 +89,24 @@ cite{
 
 .button{
     text-align: center;
-    margin: 5vh auto;
-    border: 2px dashed cyan;
-    padding: 1.5rem;
+    margin: 4vh auto;
     width: 100px;
     font-size: 22px;
+}
+.arrow {
+    border:  solid cyan;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 1.5vh;
     cursor: pointer;
 }
-.button:hover{
-    border: 2px solid cyan;
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.arrow:hover{
+    border: solid darkcyan;
+    border-width: 0 7px 7px 0;
 }
 
 /*left-bar*/
@@ -255,4 +264,68 @@ section{
     width: 100%;
     height: 100vh;
     scroll-snap-align: center;
+}
+
+
+/*skills*/
+p{
+    font-size: 5vh;
+    text-align: center;
+    color: white;
+    border-bottom: 1px solid cyan;
+    width: 80%;
+    margin: 1.5em auto;
+    letter-spacing: 0.5rem;
+}
+
+.technologies{
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    justify-content: space-between;
+}
+
+img{
+    width: 170px;
+    height: 150px;
+}
+
+#html-img{
+    margin-right: 2em;
+    margin-bottom: 2em;
+    float: left;
+}
+#css-img{
+    margin-bottom: 2em;
+    float: left;
+}
+#js-img{
+    margin-left: 2em;
+    margin-bottom: 2em;
+    float: left;
+}
+#react-img{
+    margin-left: 2em;
+    margin-bottom: 2em;
+    float: left;
+}
+
+#sql-img{
+    clear: both;
+    float: left;
+    margin-left: 3em;
+}
+#git-img{
+    float: left;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+#java-img{
+    float: left;
+}
+
+.technologies p{
+    font-size: 2vh;
+    color: white;
+    border-bottom: 1px dashed cyan;
 }
