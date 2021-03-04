@@ -368,18 +368,20 @@ section{
     text-align: center;
     font-size: 22px;
     padding: 5vh;
-    background-color: rgba(58, 156, 156, 0.9);
+    background-color: rgba(0, 0, 0, 0.6);
     margin-top: 0;
     width: 50%;
+    border-bottom: 2px solid cyan;
     border-bottom-right-radius: 20vh;
+    color: cyan;
 }
 
 .p-info .fa{
     border: none;
-    color: white;
+    color: cyan;
     font-size: 36px;
 }
 .p-info .fa:hover{
-    color: cyan;
+    color: darkcyan;
 }
    
