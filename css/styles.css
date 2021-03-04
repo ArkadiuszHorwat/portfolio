@@ -60,6 +60,7 @@ header{
 
 h1{
     letter-spacing: 0.5rem;
+    font-size: 28px;
 }
 
 #name{
@@ -268,7 +269,7 @@ section{
 
 
 /*skills*/
-p{
+.heading{
     font-size: 5vh;
     text-align: center;
     color: white;
@@ -278,54 +279,49 @@ p{
     letter-spacing: 0.5rem;
 }
 
-.technologies{
+#tech-stack{
     margin: 0 auto;
-    text-align: center;
-    display: block;
-    justify-content: space-between;
+    display: flex;
 }
 
-img{
-    width: 170px;
-    height: 150px;
-}
-
-#html-img{
-    margin-right: 2em;
-    margin-bottom: 2em;
-    float: left;
-}
-#css-img{
-    margin-bottom: 2em;
-    float: left;
-}
-#js-img{
-    margin-left: 2em;
-    margin-bottom: 2em;
-    float: left;
-}
-#react-img{
-    margin-left: 2em;
-    margin-bottom: 2em;
-    float: left;
-}
-
-#sql-img{
-    clear: both;
-    float: left;
-    margin-left: 3em;
-}
-#git-img{
-    float: left;
-    margin-left: 5em;
-    margin-right: 5em;
-}
-#java-img{
-    float: left;
-}
-
-.technologies p{
-    font-size: 2vh;
+#name-stack p{
+    font-size: 22px;
     color: white;
     border-bottom: 1px dashed cyan;
+    padding: 0.5rem;
+}
+
+.tech-img{
+    border-top: 1px dashed cyan;
+    border-left: 1px dashed cyan;
+    padding: 2rem;
+    width: 800px;
+    text-align: center;
+}
+
+.tech-img{
+    margin: 1.5rem auto;
+}
+
+
+/*about me*/
+#info{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+#info img{
+    width: 500px;
+    border: 1px solid cyan;
+}
+
+#info p{
+    font-size: 24px;
+    border-top: 1px dashed cyan;
+    border-right: 1px dashed cyan;
+    width: 500px;
+    padding: 1.5rem;
+    letter-spacing: 1.5px;
+    text-align: justify;
 }
