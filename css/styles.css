@@ -412,3 +412,13 @@ section{
     padding: 10px;
     letter-spacing: 2px;
 }
+
+footer{
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 80%;
+    padding: 3px;
+    margin: auto;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+}
