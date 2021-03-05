@@ -8,6 +8,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css" />
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+        emailjs.init("user_2q1XBdhAcBHUVtGBKWKvi");
+    })();
+    </script>
+
 </head>
 <body>
 
@@ -149,11 +159,13 @@
                 <div id="mail-form">
                     <p>Contact me</p>
                     <div class="input-area">
-                        <input class="input-mail" type="text" placeholder="Enter your name..">
-                        <input class="input-mail" type="email" placeholder="Enter mail address..">
-                        <input class="input-mail" type="tel" placeholder="Enter phone number..">
-                        <textarea class="input-mail textarea" type="text" placeholder="Message.."></textarea>
-                        <input class="input-mail submit" type="submit" value="Send">
+                        <form onsubmit="sendEmail(event)">
+                            <input name="from_name" class="input-mail inputs" type="text" placeholder="Enter your name..">
+                            <input name="email" class="input-mail inputs" type="email" placeholder="Enter your email address..">
+                            <input name="phone_number" class="input-mail inputs" type="tel" placeholder="Enter your phone number..">
+                            <textarea name="message" class="input-mail inputs textarea" type="text" placeholder="Message.."></textarea>
+                            <input class="input-mail submit" type="submit" value="Send">
+                        </form>
                     </div>
                 </div>
             </div>
@@ -169,5 +181,6 @@
     
     <script src="./js/menu.js"></script>
     <script src="./js/projects.js"></script>
+    <script src="./js/email.js"></script>
 </body>
 </html>
