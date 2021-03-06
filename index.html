@@ -159,12 +159,13 @@
                 <div id="mail-form">
                     <p>Contact me</p>
                     <div class="input-area">
-                        <form onsubmit="sendEmail(event)">
-                            <input name="from_name" class="input-mail inputs" type="text" placeholder="Enter your name..">
-                            <input name="email" class="input-mail inputs" type="email" placeholder="Enter your email address..">
-                            <input name="phone_number" class="input-mail inputs" type="tel" placeholder="Enter your phone number..">
-                            <textarea name="message" class="input-mail inputs textarea" type="text" placeholder="Message.."></textarea>
+                        <form>
+                            <input name="from_name" class="input-mail inputs" type="text" placeholder="Enter your name.." required>
+                            <input name="email" class="input-mail inputs" type="email" placeholder="Enter your email address.." required>
+                            <input id="phone" name="phone_number" class="input-mail inputs" type="tel" placeholder="Enter your phone number..">
+                            <textarea name="message" class="input-mail inputs textarea" type="text" placeholder="Message.." required></textarea>
                             <input class="input-mail submit" type="submit" value="Send">
+                            <p class="alert hide"> Message was sent :) </p>                 
                         </form>
                     </div>
                 </div>
