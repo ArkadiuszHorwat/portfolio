@@ -124,7 +124,7 @@ cite{
     position: fixed;
     left: 0px;
     text-align: center;
-    top: 25%;
+    top: 12rem;
     display: flex;
     flex-direction: column;
 }
@@ -161,7 +161,7 @@ cite{
 /*right-menu*/
 .menu-toggle{
 	flex:0 0 auto;
-    top: 25%;
+    top: 12rem;
 	width:40px;
 	height:40px;
 	border:1px solid cyan;
@@ -239,13 +239,13 @@ cite{
 .menu-bar {
     position: fixed;
     text-align: center;
-    right: 11vh;
-    top: 25%;
+    right: 5rem;
+    top: 14.5rem;
     display: flex;
     flex-direction: column;
     width: 30px;
-    border-left: 1px solid cyan;
-    border-top: 1px solid cyan;
+    border-left: 1px dashed cyan;
+    border-top: 1px dashed cyan;
 }
 
 .hide{
@@ -467,7 +467,7 @@ textarea{
 
 /*RWD*/
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 1200px){
 
     .container{
         width: 100%;
@@ -518,12 +518,10 @@ textarea{
 
     /*left-bar*/
     #media-box{
-        position: fixed;
+        position: absolute;
         display: flex;
         flex-direction: column;
-        right: 0;
-        left: 85%;
-        top: 30%;
+        top: 40%;
     }
 
     .fa {
@@ -535,10 +533,10 @@ textarea{
         position: fixed;
         text-align: center;
         right: 0;
-        top: 7.5rem;
+        top: 4.5rem;
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 10rem;
         background-color: rgba(0, 0, 0, 0.9);
         color: white;
         z-index: 1;
@@ -551,7 +549,8 @@ textarea{
         padding: 10px;
     }
     .menu-toggle{
-        top: 5rem;
+        position: fixed;
+        top: 2rem;
         z-index: 1;
         right: 0;
     }
