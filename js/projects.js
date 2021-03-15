@@ -1,9 +1,11 @@
 const daily = document.querySelector('#daily');
 const tic = document.querySelector('#tic');
 const mobile = document.querySelector('#mobile');
+const react = document.querySelector('#react');
 const dailyEl = document.querySelector('.d');
 const ticEl = document.querySelector('.t');
 const mobileEl = document.querySelector('.m');
+const reactEl = document.querySelector('.r');
 
 daily.addEventListener('mouseover', () => {
     dailyEl.classList.remove('hide');
@@ -22,4 +24,10 @@ mobile.addEventListener('mouseover', () => {
 });
 mobile.addEventListener('mouseout', () => {
     mobileEl.classList.add('hide');
+});
+react.addEventListener('mouseover', () => {
+    reactEl.classList.remove('hide');
+});
+react.addEventListener('mouseout', () => {
+    reactEl.classList.add('hide');
 });

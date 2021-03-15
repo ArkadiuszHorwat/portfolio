@@ -349,16 +349,8 @@ section{
 #tic{
     position: relative;
 }
-
 #react{
-    width: 600px;
-    height: 300px;
-    background-color: rgba(58, 156, 156, 0.1);
-}
-#react p{
-    text-align: center;
-    padding-top: 10vh;
-    font-size: 22px;
+    position: relative;
 }
 #mobile{
     width: 600px;
@@ -594,6 +586,10 @@ textarea{
     #mobile img{
         height: 150px;
     }
+    #react img{
+        width: 300px;
+        height: 150px;
+    }
     #proj-info{
         margin: 0 auto;
         width: 40%;
@@ -601,15 +597,6 @@ textarea{
         justify-content: space-evenly;
         flex-wrap: wrap;
         padding: 10px;
-    }
-    #react{
-        width: 300px;
-        height: 150px;
-    }
-    #react p{
-        text-align: center;
-        padding-top: 1rem;
-        font-size: 22px;
     }
  
     .p-info{
